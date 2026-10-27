@@ -27,10 +27,33 @@ Błędy: 400 — brak/zły parametr; 404 — nieznany user (+ lista `known_users
 
 ```json
 {
-  "user": "Ania",
   "count": 3,
   "recommendations": [
-    {"title": "...", "predicted": 4.5, "because": ["Bartek", "Celina"]},
-    ...
-  ]
+    {
+      "because": [
+        "Celina",
+        "Jacek",
+        "Kasia"
+      ],
+      "predicted": 4.31,
+      "title": "Fight Club"
+    },
+    {
+      "because": [
+        "Celina"
+      ],
+      "predicted": 3.08,
+      "title": "Forrest Gump"
+    },
+    {
+      "because": [
+        "Celina",
+        "Jacek",
+        "Kasia"
+      ],
+      "predicted": 2.37,
+      "title": "Toy Story"
+    }
+  ],
+  "user": "Ania"
 }
